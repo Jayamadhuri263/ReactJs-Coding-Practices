@@ -1,0 +1,46 @@
+.planets-app-main-container{
+    background-image: url("https://assets.ccbp.in/frontend/react-js/planets-app/planets-bg-img.png");
+    background-size: cover;
+    max-height: 100vh;
+    max-width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+.planets-app-heading{
+    color: #05acff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.planet-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.planet-image{
+    height: 230px;
+    width: 300px;
+    margin-top: 80px;
+    /* border-radius: 290px; */
+}
+.planet-name{
+    color: #f1f5f9;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.planet-description{
+    font-size: 15px;
+    width: 70%;
+    color: #f8fafc;
+}
+.planets-app-slider-container{
+    max-width: 90%;
+    height: 100vh;
+}

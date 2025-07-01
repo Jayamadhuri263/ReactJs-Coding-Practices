@@ -1,0 +1,61 @@
+.show-hide-app-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "roboto";
+    background-image: linear-gradient(to left, #fa7257, #fc63a7);
+    background-size: cover;
+}
+.show-hide-app-heading{
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+}
+.show-hide-app-mini-containers{
+    display: flex;
+    flex-direction: column;
+}
+.show-hide-app-mini-container{
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+.show-hide-app-name-container{
+    border-radius: 7px;
+    border-width: 0;
+    background-color: #fddddb;
+    color: #fc63a7;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 13px 23px;
+    margin-bottom: 25px;
+}
+.show-hide-app-firstname-container{
+    border-radius: 7px;
+    border-width: 0;
+    background-color: #fddddb;
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 63px 63px;
+    text-align: center;
+}
+.show-name{
+    display: block;
+}
+.hide-name{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .show-hide-app-mini-containers{
+        flex-direction: row;
+    }
+
+    .show-hide-app-heading{
+        font-size: 50px;
+    }
+}

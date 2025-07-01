@@ -1,0 +1,335 @@
+.password-manager-app-main-container{
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: linear-gradient(to bottom, #9ba9eb, #c3caea);
+    background-size: cover;
+}
+.password-manager-app-main-bg-image{
+    height: 55px;
+    width: 175px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.password-manager-app-first-container{
+    border: none;
+    border-radius: 10px;
+    background-color: #5763a5;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 25px;
+    margin-left: 50px;
+    min-height: 60vh;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    padding-left: 40px;
+}
+.password-manager-app-manager-image{
+    width: 76%;
+    height: 48vh;  
+    margin-bottom: 25px;
+}
+.password-manager-form-container{
+    width: 80%;
+    max-height: 40vh;
+    border: none;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: #454f84;
+    margin-bottom: 34px;
+}
+.password-manager-form-heading{
+    font-size: 22px;
+    font-weight: 600;
+    color: #f8fafc;
+}
+.password-manager-input-image-container{
+    display: flex;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: 6vh;
+    width: 90%;
+}
+.password-manager-app-website-image{
+    height: 26px;
+    width: 26px;
+    border-right: 1px solid #454f84;
+    margin: 12px;
+    margin-right: 16px;
+    padding-right: 12px;
+}
+.password-manager-app-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #454f84;
+}
+.password-manager-app-add-button-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.password-manager-app-add-button{
+    border: none;
+    border-radius: 7px;
+    width: 100px;
+    height: 38px;
+    color:#fff ;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    background-color: #0b69ff;
+    margin-right: 43px;
+    margin-bottom: 20px;
+}
+.passwords-count-search-bar-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    background-color: transparent;
+    height: 14vh;
+    padding: 20px 0px 0px 15px;
+}
+.passwords-count-heading{
+    color: #f8fafc;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.passwords-count-heading > span{
+    color: #fff;
+    font-size: 28px;
+}
+.search-input{
+    width: 52%;
+    height: 5vh;
+    margin-top: 10px;
+}
+.search-bar{
+    margin: 8px;
+    padding-right: 6px;
+}
+.search-bar-input{
+    width: 75%;
+}
+.password-manager-hr-line{
+    width: 93%;
+    margin-top: -45px;
+    margin-bottom: 20px;
+    color: #c3caea;
+}
+.password-manager-show-passwords-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: transparent;
+    padding-right: 5px;
+}
+.password-manager-show-password-checkbox-container{
+    display: flex;
+}
+.checkbox-input{
+    height: 16px;
+    width: 16px;
+    margin-right: 12px;
+    margin-top: -2px;
+}
+.passwords-list-container{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 90%;
+    margin-bottom: 32px;
+}
+.no-passwords-list-view-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-passwords-image{
+    width: 102%;
+    margin-top: 10px;
+    height: 30vh;
+}
+.password-item-container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #c3caea;
+    border-radius: 10px;
+    padding: 10px 4px 10px 8px;
+    background-color: transparent;
+    margin-top: 25px;
+    width: 90%;
+    height: 13vh;
+}
+.password-item-profile-container{
+    height: 60px;
+    width: 60px;
+    border-radius: 45px;
+    border: none;
+    background-color: #34edaa;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.password-item-profile-initial{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 8px;
+    margin-right: 0px;
+}
+.password-item-mini-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    color: #c3caea;
+    margin-top: -10px;
+}
+.user-details{
+    font-size: 22px;
+    margin-bottom: -12px;
+}
+.username{
+    font-size: 20px;
+}
+.delete-button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    left: -40px;
+    width: 20px;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.password-item-row{
+    display: flex;
+}
+.password-manager-app-second-container{
+    border: none;
+        border-radius: 10px;
+        background-color: #5763a5;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        margin-top: 25px;
+        margin-left: 50px;
+        min-height: 60vh;
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 35px;
+        padding-left: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .password-manager-app-main-bg-image{
+        margin-left: 80px;
+    }
+
+    .password-manager-app-first-container{
+        margin-left: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 75vh;
+        width: 80%;
+    }
+
+    .password-manager-app-manager-image{
+        padding-top: 40px;
+        height: 63vh;
+        width: 45%;
+    }
+
+    .password-manager-form-container{
+        width: 35%;
+        margin-top: 80px;
+        margin-right: 50px;
+        min-height: 50vh;
+        padding-left: 40px;
+        padding-left: 30px;
+    }
+
+    .password-manager-app-website-image{
+        height: 22px;
+        width: 22px;
+        margin-top: 6px;
+    }
+
+    .password-manager-app-input{
+        font-size: 16px;
+    }
+
+    .password-manager-app-second-container{
+        margin-left: 80px;
+        margin-top: 0px;
+    }
+
+    .password-manager-hr-line{
+        margin-top: -16px;
+        margin-left: 0px;
+    }
+    
+    .search-input{
+        width: 30%;
+    }
+
+
+    .password-manager-show-password-checkbox-container{
+        margin-right: 80px;
+    }
+
+    .passwords-list-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .no-passwords-list-view-container{
+        min-width: 65%;
+        height: 22vh;
+        margin-top: 50px;
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .no-passwords-image{
+        height: 38vh;
+        width: 70%;
+        margin-bottom: 0px;
+    }
+
+    .password-item-container{
+        width: 70%;
+    }
+
+    .password-item-row{
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+
+    .password-item-mini-container{
+        margin-top: 0px;
+    }
+
+    .password-manager-app-second-container{
+        min-height: 70vh;
+    }
+}

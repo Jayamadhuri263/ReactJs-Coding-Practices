@@ -1,0 +1,77 @@
+.coin-toss-game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(to left,#e2a139, #f9d423);
+    background-size: cover;
+}
+.coin-toss-game-mini-container{
+    background-color: #fff;
+    border-width: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    width: 80%;
+    padding: 20px 10px;
+}
+.coin-toss-game-heading{
+    font-size: 40px;
+    color: #a35200;
+    font-weight: 700;
+}
+.coin-toss-game-description{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0px;
+    color: #334155;
+}
+.coin-toss-game-image{
+    height: 29vh;
+    width: 40%;
+}
+.coin-toss-game-button{
+    background-color: #e2a139;
+    border-width: 0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #a35200;
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+.coin-toss-game-result-container{
+    display: flex;
+    flex-direction: column;
+}
+.coin-toss-game-count-label{
+    font-size: 24px;
+    color: #334155;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .coin-toss-game-mini-container{
+        height: 85vh;
+        width: 50%;
+    }
+
+    .coin-toss-game-image{
+        height: 33vh;
+        width: 30%;
+    }
+
+    .coin-toss-game-result-container{
+        flex-direction: row;
+    }
+
+    .coin-toss-game-count-label{
+        margin-right: 35px;
+    }
+}

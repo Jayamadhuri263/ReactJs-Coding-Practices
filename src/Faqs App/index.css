@@ -1,0 +1,88 @@
+.faqs-app-container{
+    background-color: #f1f5f8;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.faqs-app-container-mini{
+    min-height: 80vh;
+    width: 80%;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px #bfbfbf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.faqs-app-heading{
+    font-size: 38px;
+    font-weight: 800;
+    color: #cb8805;
+}
+.faqs-app-list-item{
+    list-style-type: none;
+    margin: 18px;
+    background-color: transparent;
+    padding: 4px 24px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-height: 35vh;
+    border: 1px solid #9aa5d1;
+    border-radius: 10px;
+}
+.faqs-app-question-button-container{
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+.faqs-app-list-question{
+    font-size: 20px;
+    font-weight: 700;
+    color: #52606d;
+}
+.faqs-app-list-button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.faqs-app-list-icon{
+    height: 16px;
+    width: 16px;
+}
+.faqs-app-answer-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.faqs-app-line{
+    width: 100%;
+    color: #52606d;
+}
+.faqs-app-answer{
+    font-size: 18px;
+    color: #9aa5d1;
+}
+
+@media screen and (min-width:768px) {
+    .faqs-app-container-mini{
+        width: 40%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

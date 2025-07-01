@@ -1,0 +1,18 @@
+.hamburger-menu-container{
+    display: flex;
+    justify-content: space-between;
+    max-height: 100vh;
+    max-width: 100%;
+    padding: 20px 80px 0px 80px;
+}
+.hamburger-menu-logo{
+    height: 40px;
+    width: 40px;
+}
+.hamburger-menu-close{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    outline: none;
+}

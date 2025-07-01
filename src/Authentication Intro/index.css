@@ -1,0 +1,306 @@
+.authentication-login-page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px 10px 30px 40px;
+}
+.login-website-logo-mobile-image{
+    width: 88%;
+    height: 35vh;
+    margin-bottom: 24px;
+}
+.authentication-login-form-container{
+    height: 43vh;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 2px 5px rgb(177, 173, 173);
+    padding: 28px 12px 20px 45px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.authentication-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-website-logo-image{
+    height: 60px;
+    width: 50%;
+    margin-bottom: 30px;
+}
+.authentication-form-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-label-name{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(77, 25, 25);
+    margin-bottom: 12px;
+}
+.form-label-input{
+    width: 80%;
+    height: 28px;
+    border: 1px solid rgb(88, 21, 21);
+    padding: 8px 5px 6px 18px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+.submit-button{
+    background-color: rgb(107, 12, 12);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    width: 120px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .authentication-login-page-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .login-website-logo-mobile-image{
+        width: 45%;
+        height: 44vh;
+    }
+
+    .authentication-login-form-container{
+        max-width: 34%;
+        margin-right: 8%;
+        min-height: 56vh;
+    }
+
+    .authentication-form-container{
+        width: 80%;
+    }
+
+    .authentication-intro-header-container{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+}
+
+.authentication-intro-header-container{
+    display: flex;
+    height: 3vh;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.login-website-logo-image-header{
+    height: 40px;
+    width: 140px;
+    margin-top: 4px;
+}
+.header-home-intro{
+    color: rgb(107, 12, 12);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.header-logout-button{
+    height: 30px;
+    width: 80px;
+    font-size: 14.5px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.home-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.home-logo-image{
+    height: 59vh;
+    width: 77%;
+}
+.intro-content-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 30px 73px;
+}
+.home-concent-heading{
+    color: rgb(107, 12, 12);
+    font-size: 30px;
+    font-weight: 700;
+}
+.home-content-description{
+    color: rgb(22, 18, 18);
+    font-size: 20px;
+    width: 92%;
+    margin-top: 0px;
+}
+.shop-now-button{
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .home-content-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .home-logo-image{
+        margin-left: 80px;
+        height: 80vh;
+        min-width: 40%;
+    }
+}
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-error-message{
+    margin-top: -14px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: rgb(219, 10, 10);
+    text-transform: capitalize;
+}
+.prime-deals-section-failure-container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px 50px 50px;
+    
+}
+.failure-view-prime-deals-section{
+    width: 94%;
+    height: 33vh;
+}
+.exclusive-prime-deals-heading{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(107, 12, 12);
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.exclusive-prime-deals-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.prime-deals-product-card-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 4px 14px -4px 0px;
+    padding: 18px;
+}
+.prime-deals-product-card-image{
+    border-radius: 6px;
+    width: 100%;
+    height: 32vh;
+    margin-bottom: -4px;
+}
+.prime-deals-product-card-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.prime-deals-product-card-brand{
+    font-size: 18px;
+    color: rgb(112, 109, 109);
+}
+.prime-deals-product-card-price{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.prime-deals-product-card-price-rating-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+.prime-deals-product-card-star-rating-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(95, 3, 3);
+    border: 0px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+    height: 3vh;
+    width: 18%;
+}
+.prime-deals-product-card-star{
+    height: 15px;
+    width: 15px;
+    margin-left: 4px;
+    margin-top: -2px;
+}
+.products-loader-container {
+    display: flex;
+}
+
+.all-products-section-container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px 50px 50px;
+}
+.row-products-sorting-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-products-heading {
+    margin-top: -80px;
+}
+
+@media screen and (min-width:768px) {
+    .prime-deals-product-card-container{
+        width: 24%;
+        margin-right: 12px;
+    }
+    .prime-deals-product-card-image{
+        width: 100%;
+        height: 45vh;
+    }
+    .prime-deals-section-failure-container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0px 50px 170px;
+    }
+    .prime-deals-product-card-star-rating-container{
+        height: 4vh;
+        width: 22%;
+    }
+    .failure-view-prime-deals-section {
+        width: 79.8%;
+        height: 61vh;
+    }
+    .all-products-section-container{
+        padding: 50px 0px 50px 170px;
+    }
+    .failure-view-prime-deals-section{
+        margin-left: 22px;
+        margin-bottom: 30px;
+    }
+}

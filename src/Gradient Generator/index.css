@@ -1,0 +1,50 @@
+.bg{
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    margin-top: -1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.top-style{
+    background-image: linear-gradient( to top,red, blue);
+}
+.bottom-style {
+    background-image: linear-gradient(to bottom,red, blue);
+}
+.left-style {
+    background-image: linear-gradient(to left, red, blue);
+}
+.right-style {
+    background-image: linear-gradient(to right, red, blue);
+}
+button{
+    border: 1px solid white !important;
+    padding: 6px 12px 6px 12px;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1em;
+}
+.btn-active-style{
+    background-color: white !important;
+    color: black;
+}
+div>div{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+div >input{
+    height: 4vh;
+    width: 130%;
+    margin-right: 3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

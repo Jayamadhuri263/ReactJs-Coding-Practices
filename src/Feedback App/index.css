@@ -1,0 +1,82 @@
+.feedback-container{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #ffeeee, #ffc0bb);
+    background-size: cover;
+}
+.feedback-min-container{
+    background-color: #fff;
+    height: 47vh;
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 0;
+    border-radius: 17px;
+}
+.feedback-heading{
+    color: #0f172a;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+.feedback-emojis-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback-emojis-image{
+    height: 60px;
+    width: 60px;
+}
+.feedback-emojis-love-icon{
+    height: 60px;
+    width: 60px;
+    margin-top: 0px;
+    margin-bottom: -14px;
+}
+.feedback-emojis-name{
+    font-size: 22px;
+    color: #1e293b;
+    margin-left: 15px;
+}
+.feedback-list-element{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    margin-top: 20px;
+}
+.feedback-button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.feedback-note{
+    font-size: 35px;
+    color: #0f172a;
+    text-align: center;
+}
+.row-container{
+    display: flex;
+}
+.after-feedback-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:768px){
+    .feedback-min-container{
+        width: 55%;
+        height: 55vh;
+    }
+}

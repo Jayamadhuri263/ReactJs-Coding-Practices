@@ -1,0 +1,152 @@
+.appointments-app-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #9796f0, #fbc7d4) ;
+    background-size: cover;
+}
+.appointments-app-mini-container{
+    min-height: 85vh;
+    width: 85%;
+    background-color: #fff;
+    border-width: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:6%;
+    margin-left: 50px;
+    margin: 50px;
+}
+.appointment-image{
+    display: none;
+}
+.appointment-title{
+    font-size: 18px;
+    color: #b5b7c4;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+.appointment-submit-button{
+    padding: 7px 24px;
+    background-color: #8b5cf6;
+}
+.appointment-form-mini-container{
+    width: 90%;
+}
+.appointment-form-container{
+    width: 90%;
+}
+.appointment-app-line{
+    width: 80%;
+    color: #b5b7c4;
+    font-size: 2px;
+    margin-bottom: 30px;
+}
+.appointments-list-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.appointments-list-name-fav-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.appointments-list-heading-appointments{
+    font-size: 32px;
+    margin-top: 3px;
+    margin-left:-25px;
+}
+.appointments-list-starred-button{
+    background-color: transparent;
+    border: 1px solid #8b5cf6;
+    color: #8b5cf6;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 42px;
+    padding: 4px 18px;
+    font-size: 18px;
+}
+.appointment-item-container{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid #b5b7c4;
+    padding: 3px 30px;
+    border-radius: 10px;
+    width: 86%;
+    margin-bottom: 25px;
+}
+.appointment-item-mini-container{
+    display: flex;
+    justify-content: space-between;
+}
+.appointment-list-date{
+    font-size: 25px;
+}
+.appointment-list-title{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width:768px) {
+    .comments-app-heading{
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+
+    .appointment-image{
+        display: block;
+        height: 50vh;
+        width: 48%;
+        order: 1;
+    }
+
+    .appointment-form-container{
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .appointment-input{
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    .appointment-app-line{
+        width: 90%;
+    }
+
+    .appointments-list-heading-appointments{
+        font-size: 28px;
+    }
+
+    .appointments-list-container{
+        width: 90%;
+    }
+
+    .appointments-lists-container-bottom{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .appointment-item-container{
+        width: 25%;
+        margin-right: 24px;
+        height: 16vh;
+    }
+
+    .appointment-list-title{
+        font-size: 22px;
+    }
+
+    .appointment-list-date{
+        font-size: 20px;
+        width: 90%;
+    }
+}

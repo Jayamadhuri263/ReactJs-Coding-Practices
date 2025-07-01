@@ -1,0 +1,113 @@
+.digital-timer-app-container{
+    background-color: #cffcf1;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.digital-timer-app-heading{
+    color: #0f172a;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.digital-timer-app-timer-container{
+    background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+    height: 45vh;
+    background-position: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.digital-timer-app-timer-mini-container{
+    height: 200px;
+    width: 200px;
+    border-radius: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.digital-timer-app-timer{
+    font-size: 38px;
+    font-weight: bolder;
+    color: #00d9f5;
+}
+.digital-timer-app-status{
+    font-size: 26px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-top: 0px;
+}
+.digital-timer-start-reset-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: transparent;
+    margin-top: 70px;
+}
+.digital-timer-start-reset-container{
+    display: flex;
+    justify-content: space-between;
+}
+.digital-timer-start-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.digital-timer-button-image{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+.start{
+    font-size: 38px;
+    margin-top: 12px;
+    margin-right: 70px;
+}
+.digital-timer-ulta-container{
+    display: flex;
+    margin-left: 60px;
+}
+.limit{
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.digital-timer-limit-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: transparent;
+    margin-bottom: 80px;
+}
+.digital-timer-limit-button{
+    background-color: transparent;
+    color: #0f172a;
+    font-size: 50px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.digital-timer-limit-count{
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    background-image: linear-gradient(to left, #00d9f5, #00d9f5);
+    width: 30%;
+    font-size: 40px;
+    font-weight: 800;
+    height: 4vh;
+    margin-top: 20px;
+    text-align: center;
+}

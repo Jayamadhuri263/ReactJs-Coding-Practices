@@ -1,0 +1,83 @@
+.contacts-app-container{
+    min-height: 100vh;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contacts-app-heading{
+    font-size: 35px;
+    font-weight: 700;
+}
+.contacts-app-contact-form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contacts-app-input{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px 7px;
+    padding-top: -4px;
+    font-size: 16px;
+    color: black;
+    margin: 10px;
+    height: 4vh;
+    margin-top: 18px;
+}
+.contacts-app-button{
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 14px 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.contacts-app-contacts-table{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.contact-item-container{
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+}
+.contact-item-button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.image{
+    height: 20px;
+    width: 20px;
+}
+.contact-item-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-item-mobile{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen  and  (min-width:768px) {
+    .contacts-app-heading{
+        font-size: 45px;
+    }
+
+    .contacts-app-input{
+        margin-top: 22px;
+        margin-right: 22px;
+    }
+
+    .contacts-app-contacts-table{
+        width: 50%;
+    }
+}

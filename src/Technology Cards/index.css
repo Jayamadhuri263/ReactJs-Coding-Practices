@@ -1,0 +1,109 @@
+.tech-card-1 {
+    border-top: 5px solid #ff4f64;
+}
+
+.tech-card-2 {
+    border-top: 5px solid #00a8e7;
+}
+
+.tech-card-3 {
+    border-top: 5px solid #44c4a1;
+}
+
+.tech-card-4 {
+    border-top: 5px solid #fcc200;
+}
+
+.technology-cards-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4faff;
+    font-family: "Roboto";
+}
+.technology-cards-min-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.technology-cards-heading{
+    font-size: 35px;
+    color: #171f46;
+}
+.technology-cards--description{
+    font-size: 18px;
+    color: #64748b;
+    margin-top: 0px;
+    width: 70%;
+    text-align: center;
+}
+.technology-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-item-container{
+    width: 60%;
+    border-radius: 8px;
+    padding: 10px 20px;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    padding-left: 20px;
+    margin-top: 24px;
+    background-color: #fff;
+}
+.card-item-heading{
+    font-size: 20px;
+    color: #171f46;
+}
+.card-item-description{
+    font-size: 15px;
+    color: #64748b;
+}
+.card-item-image-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.card-item-image{
+    height: 60px;
+    width: 68px;
+}
+
+@media screen and (min-width:768px) {
+    .technology-cards-heading{
+        font-size: 50px;
+    }
+
+    .technology-cards--description{
+        font-size: 22px;
+    }
+
+    .technology-card-container{
+        width: 70%;
+    }
+
+    .card-item-container{
+        width: 38%;
+        height: 40vh;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .card-item-heading{
+        font-size: 28px;
+    }
+
+    .card-item-description{
+        font-size: 20px;
+    }
+
+    .card-item-image{
+        height: 70px;
+        width: 78px;
+    }
+}

@@ -1,0 +1,92 @@
+.extra-app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100%;
+}
+.extra-app-container-mini{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    padding: 2em 3em;
+    box-shadow: #000;
+    height: 70vh;
+    width: 70%;
+}
+.extra-app-container-mini-container{
+    display: flex;
+    justify-content: space-between;
+}
+.extra-results-container{
+    display: flex;
+    justify-content: space-between;
+}
+.results-list-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.extra-app-heading{
+    font-size: 25px;
+}
+.extra-form-container{
+    display: flex;
+    flex-direction: column;
+}
+.extra-form-container > form {
+    display: flex;
+    flex-direction: column;
+}
+.extra-form-container>form>button {
+    cursor: pointer;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 1.2em;
+    margin-top: 2em;
+    color: white;
+    font-weight: 700;
+}
+.extra-form-container>form> input:first-child {
+    margin-bottom: 1em;
+}
+.extra-image-container >  img{
+    height: 40vh;
+    width: 80%;
+}
+hr{
+    height: 1px;
+    color: gray;
+    width: 90%;
+    margin: 1em 2em;
+    margin-bottom: 3em;
+}
+.extra-results-container > button {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid blueviolet;
+    border-radius: 6px;
+    padding: 0.2em 1.2em;
+    margin-top: 2em;
+    color: blueviolet;
+    height: 5vh;
+    font-weight: 700;
+}
+.item-container{
+    display: flex;
+    flex-direction: column;
+    border: apx solid #9796f0;
+    border-radius: 10px;
+    margin: 2em;
+    width: 30%;
+    height: 26vh;
+}
+.item-container > button > img{
+    height: 20px;
+    width: 20px;
+}

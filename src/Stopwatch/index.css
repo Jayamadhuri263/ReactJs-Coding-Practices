@@ -1,0 +1,93 @@
+.stopwatch-container{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+.stopwatch-image{
+    height: 80vh;
+    width: 100%;
+    margin-top: 200px;
+}
+.stopwatch-timer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 10px;
+    width: 64%;
+    height: 36vh;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 115px;
+}
+.stopwatch-heading{
+    font-size: 30px;
+    color: #333;
+    font-weight: 800;
+}
+.stopwatch-timer-image-container{
+    display: flex;
+}
+.timer-image{
+    height: 26px;
+    width: 26px;
+}
+.timer-heading{
+    font-size: 24px;
+    color: #333;
+    margin-left: 14px;
+    margin-top: 0px;
+    font-weight: 700;
+}
+.timer-count{
+    font-size: 50px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.timer-buttons-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.timer-button{
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    width: 35%;
+    height: 40px;
+    cursor: pointer;
+}
+.start-timer{
+    background-color: #1db05f;
+    margin-right: 28px;
+}
+.stop-timer{
+    background-color: #ef0d36;
+    margin-right: 28px;
+}
+.reset-timer{
+    background-color: #eaa800;
+}
+
+@media screen and (min-width:768px) {
+    .stopwatch-timer-container{
+        width: 30%;
+        height: 45vh;
+    }
+
+    .stopwatch-image{
+        display: none;
+    }
+}

@@ -1,0 +1,115 @@
+.emoji-game-first-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:linear-gradient(to right, #9796f0,#fbc7d4) ;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100%;
+    padding-right: 32px;
+}
+.emoji-game-header-container {
+    background-image: linear-gradient(to left, #9796f0, #fbc7d4);
+    height: 4.5vh;
+    width: 102%;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 26px 24px 26px;
+}
+
+.emoji-game-header-game-logo {
+    height: 50px;
+    width: 50px;
+    padding-left: 40px;
+}
+
+.emoji-game-header-score-timer-container {
+    display: flex;
+    background-color: transparent;
+    margin-top: -5px;
+    margin-right: 6px;
+
+}
+
+.emoji-game-header-timer {
+    height: 20px;
+    width: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.emoji-game-header-score {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.emoji-game-header-score-count {
+    color: #fec653;
+    font-size: 27px;
+    margin-left: -12px;
+}
+.emoji-game-header-game-name{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 800;
+    margin-left: 3px;
+    margin-top: 8px;
+}
+@media screen and (min-width:768px) {
+    .emoji-game-header-container {
+        height: 2.5vh;
+    }
+
+    .emoji-game-header-game-logo {
+        height: 5vh;
+        width: 11%;
+    }
+
+    .emoji-game-header-game-name{
+        margin-top: 2px;
+        margin-left: 7px;
+    }
+
+    .emoji-game-header-score-timer-container {
+        margin-right: 30px;
+        width: 30%;
+    }
+
+    .emoji-game-header-score{
+        margin-top: 0px;
+    }
+}
+
+.emoji-game-content-container{
+    width: 86%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 20px 50px 20px;
+}
+.emoji-item-container{
+    display: flex;
+    border: 4px solid #ffffff30;
+    border-radius: 14px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+    background-color: #ffffff33;
+}
+.emoji-item-image{
+    height: 100px;
+    width: 100px;
+}
+.emoji-item-button{
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    height: 150px;
+    width: 150px;
+    border: none;
+}

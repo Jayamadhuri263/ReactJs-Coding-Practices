@@ -1,0 +1,128 @@
+.cash-withdrawal-container {
+    min-height: 100vh;
+    font-family: "roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.cash-withdrawal-mini-container {
+    min-height: 60vh;
+    font-family: "roboto";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #150b3e;
+    padding: 30px 12px;
+    width: 77%;
+    border-radius: 10px;
+    padding-left: 13px;
+}
+
+.cash-withdrawal-profile-container {
+        display: flex;
+        margin-top: -10px;
+        margin-left: 13px;
+}
+
+.cash-withdrawal-profile-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 35px;
+    text-align: center;
+    color: #7c3aed;
+    font-size: 37px;
+    font-weight: 900;
+    background-color: #c7d2fe;
+}
+
+.cash-withdrawal-profile-name {
+    font-size: 24px;
+    color: #c7d2fe;
+    margin-left: 20px;
+}
+
+.cashWithdrawal-initialLetter {
+    margin-top: 7px;
+}
+
+.cashWithdrawal-bal-container {
+    display: flex;
+        justify-content: space-between;
+        margin-left: 13px;
+        margin-top: 10px;
+}
+
+.cashWithdrawal-bal-heading {
+    font-size: 22px;
+    color: #585076;
+}
+
+.cashWithdrawal-bal-count {
+    font-size: 40px;
+    color: #d4d2db;
+    margin-top: 6px;
+    padding-right: 15px;
+}
+
+.cashWithdrawal-bal-currency {
+    font-size: 13px;
+    color: #585076;
+    margin-top: 0px;
+    position: absolute;
+}
+.cashWithdrawal-withdraw-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 13px;
+}
+.cashWithdrawal-withdraw-heading{
+    font-size: 28px;
+    color: #d4d2db;
+    margin-bottom: -5px;
+}
+.cashWithdrawal-withdraw-note{
+    font-size: 16px;
+    color: #585076;
+}
+.cashWithdrawal-withdraw-money-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cashWithdrawal-withdraw-money-button{
+    margin: 12px;
+    width: 40%;
+    height: 7vh;
+    border: 1px solid #d4d2db;
+    border-radius: 7px;
+    background-color: #585076;
+    color: #d4d2db;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .cash-withdrawal-mini-container{
+        width: 50%;
+        height: 68vh;
+    }
+
+    .cash-withdrawal-profile-name{
+        font-size: 28px;
+        margin-top: 14px;
+    }
+
+    .cashWithdrawal-bal-count{
+        font-size: 50px;
+    }
+
+    .cashWithdrawal-bal-heading{
+        font-size: 28px;
+    }
+
+    .cashWithdrawal-bal-currency{
+        font-size: 16px;
+    }
+}

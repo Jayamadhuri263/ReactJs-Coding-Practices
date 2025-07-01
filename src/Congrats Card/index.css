@@ -1,0 +1,59 @@
+.congratsCard-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url("https: //assets.ccbp.in/frontend/react-js/congrats-card-profile-img.png"); */
+    background-image: url("/public/congrats-card-bg.png");
+    background-size: cover;
+    font-family: "Roboto";
+    width: 100%;
+}
+.congrats-heading{
+    font-size: 24px;
+    color: #0f172a;
+}
+.congrats-mini-container{
+    background-color: #cffafe;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 78vh;
+    width: 80%;
+}
+.congrats-profile{
+    height: 140px;
+    width: 140px;
+}
+.congrats-profile-name{
+    font-size: 22px;
+    color: #0f172a;
+}
+.congrats-profile-description{
+    font-size: 16px;
+    color: #1e293b;
+    width: 60%;
+    text-align: center;
+    margin-top: -2px;
+}
+@media screen and (min-width:768px) {
+    .congrats-heading {
+        font-size: 40px;
+    }
+
+    .congrats-mini-container {
+        height: 76vh;
+        width: 40%;
+    }
+
+    .congrats-profile-name{
+        font-size: 30px;
+    }
+
+    .congrats-profile-description{
+        font-size: 22px;
+    }
+}

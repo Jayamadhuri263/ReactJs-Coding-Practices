@@ -1,0 +1,316 @@
+.money-manager-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+.money-manager-profile-container{
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 28vh;
+    background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+    background-size: cover;
+    border-width: 0px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.money-manager-profile-name{
+    color: #334155;
+    font-weight:800;
+    font-size: 35px;
+}
+.money-manager-profile-message{
+    font-size: 25px;
+    font-weight: 600;
+    color: #7e858e;
+    margin-top: 0px;
+}
+.money-manager-profile-message-special{
+    color: #0b69ff;
+    margin-left: 10px;
+}
+.money-manager-balance-containers{
+    display: flex;
+    flex-direction: column;
+}
+.money-manager-form-and-list-container{
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    margin-left: -32px;
+}
+.money-manager-history-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    margin-top: 50px;
+    margin-left: 3px;
+    border: 1px solid #7e858e;
+    border-radius: 10px;
+    padding: 24px 44px;
+}
+.money-manager-form-container{
+    width: 90%;
+    border: 1px solid #7e858e;
+    border-radius: 10px;
+    padding: 24px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    height: 62vh;
+}
+.money-manager-form-heading{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #334155;
+}
+.money-manager-form-title-label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #7e858e;
+    margin-top: 18px;
+}
+.money-manager-form-title-input{
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #7e858e;
+    padding: 10px 16px;
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #334155;
+}
+.money-manager-form-submit-button{
+    border-radius: 10px;
+    border-width: 0;
+    padding: 14px 24px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #0b69ff;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+.select-input{
+    width: 88%;
+}
+.money-manager-select-option{
+    font-size: 16px;
+    width: 60%;
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.money-manager-history-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #7e858e;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.money-manager-history-heading-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.hr-line{
+    width: 100%;
+    color: #334155;
+    margin-top: -5px;
+}
+.money-manager-history-mini-headings{
+    font-size: 18px;
+    color: #334155;
+    font-weight: 600;
+    margin-left: -90px;
+}
+.money-item-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.money-item-main-container{
+    display: flex;
+    flex-direction: column;
+}
+.amount-type{
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-left: -16px;
+}
+.money-item-delete-button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: -30px;
+}
+.money-item-delete-image{
+    height: 30px;
+    width: 30px;
+}
+.money-details-main-container{
+    display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 37px;
+}
+.money-details-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color:#cffafe ;
+    border: 1px solid #06b6d4;
+    border-radius: 12px;
+    padding: 17px 20px;
+    margin-top: 50px;
+    margin-bottom: 11px;
+    margin-left: 30px;
+    width: 84%;
+    height: 25vh;
+}
+.balance-container{
+    background-color: #ecfccb;
+    border: 1px solid #84cc16;
+}
+.expenses-container {
+    background-color: #ede9fe;
+    border: 1px solid #7c3aed;
+}
+.income-image{
+    height: 100px;
+    width: 100px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.income-container-name-amount{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.income-heading{
+    font-size: 26px;
+    font-weight: 500;
+    color: #334155;
+}
+.income-count{
+    font-size: 30px;
+        font-weight: 800;
+        color: #334155;
+        margin-top: 3px;
+}
+.money-details-container-main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .money-manager-profile-container{
+        height: 30vh;
+        width: 70%;
+    }
+
+    .money-manager-main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 100px;
+    }
+
+    .money-details-container-main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .money-details-container{
+        width: 19%;
+        height: 15vh;
+    }
+
+    .money-details-main-container{
+        width: 100%;
+        flex-direction: row;
+        margin-left: -32px;
+    }
+
+    .income-image{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+            margin-top: 18px;
+            margin-left: 20px;
+    }
+
+    .income-container-name-amount {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 8px;
+    }
+
+    .income-heading{
+        font-size: 19px;
+    }
+
+    .income-count{
+        font-size: 22px;
+    }
+
+    .money-manager-form-and-list-container{
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+
+    .money-manager-form-container{
+        width: 42%;
+        height: 65vh;
+        margin-right: 40px;
+        margin-left: 28px;
+    }
+
+    .money-manager-form-heading{
+        font-size: 23px;
+    }
+
+    .money-manager-form-title-label{
+        font-size: 14px;
+    }
+
+    .money-manager-form-title-input{
+        padding: 8px 16px;
+        width: 80%;
+        margin-bottom: 4px;
+        font-size: 16px;
+        color: #334155;
+    }
+
+    .select-input{
+        width: 90%;
+    }
+
+    .money-manager-form-submit-button{
+        padding: 8px 16px;
+    }
+
+    .money-manager-history-main-container{
+        margin-top: 62px;
+        width: 75%;
+        margin-right: 60px;
+
+    }
+}

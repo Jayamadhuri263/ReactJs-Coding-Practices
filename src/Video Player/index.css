@@ -1,0 +1,29 @@
+.video-player-container{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.video-player-heading{
+    font-size: 30px;
+    font-weight: 600;
+    color: crimson;
+}
+.video-player-responsive-container{
+    height: 30vh;
+    width: 50%;
+}
+.video-player-button{
+    background-color: rgb(189, 189, 12);
+    border: 1px solid rgb(129, 129, 10);
+    color: #000;
+    margin-top: 15%;
+    height: 30px;
+    font-weight: 800;
+    width: 60px;
+    border-radius: 7px;
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+.capitals-app-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #93c5fd;
+}
+.capitals-app-mini-container{
+    background-color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 30px 14px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.capitals-app-heading{
+    font-size: 30px;
+    color: #1e293b;
+}
+.capitals-app-input-container{
+    display: flex;
+}
+.capitals-app-select{
+    border: 1px solid #93c5fd;
+    padding: 7px 6px;
+    color: black;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.capitals-app-question{
+    font-size: 15px;
+    margin-left: 5px;
+}
+.capitals-app-option{
+    color: black;
+    font-size: 16px;
+}
+.capitals-app-answer{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+@media screen and (min-width:768px) {
+    .capitals-app-mini-container{
+        width: 30%;
+        height: 35vh;
+    }
+
+    .capitals-app-question{
+        margin-left: 10px;
+    }
+
+    .capitals-app-question{
+        font-size: 18px;
+    }
+}
