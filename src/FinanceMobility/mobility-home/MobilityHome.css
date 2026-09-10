@@ -1,0 +1,76 @@
+.finance-mobility-home-main-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    padding: 6em 2em 3em 5em;
+    background-color: rgb(173, 215, 235);
+}
+
+.finance-mobility-maker-main-container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.finance-mobility-home-main-container a {
+    font-size: 22px;
+}
+
+.finance-mobility-show-auth-main-container {
+    padding: 1em 3em 2em 2em;
+    border-radius: 8px;
+    width: 60%;
+    background-color: rgb(82, 160, 196);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.finance-mobility-show-auth-sub-container {
+    background-color: transparent;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    cursor: pointer;
+}
+
+.finance-mobility-auth-reject-button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+
+.finance-mobility-home-main-container div>button>p:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.finance-mobility-home-main-container form {
+    margin-bottom: 0em;
+}
+
+.finance-mobility-file-upload-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    width: 11%;
+}
+
+.finance-mobility-footer-copyright {
+    background: #515153;
+    padding: 1em 2em;
+}
+
+.finance-mobility-footer-copyright p {
+    color: #e3e2e7;
+    margin: 2px 0 0;
+}
+
+.finance-mobility-home-main-container div>div>div>div>p>a {
+    font-size: 14px;
+}

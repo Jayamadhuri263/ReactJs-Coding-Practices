@@ -10,16 +10,19 @@ class LayoutBuilder extends Component {
     showLeftNavbar: true,
     showRightNavbar: true,
   };
+
   onToggleShowContent = () => {
     this.setState((prevState) => ({
       showContent: !prevState.showContent,
     }));
   };
+
   onToggleShowRightNavbar = () => {
     this.setState((prevState) => ({
       showRightNavbar: !prevState.showRightNavbar,
     }));
   };
+  
   onToggleShowLeftNavbar = () => {
     this.setState((prevState) => ({
       showLeftNavbar: !prevState.showLeftNavbar,

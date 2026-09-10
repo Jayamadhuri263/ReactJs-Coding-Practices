@@ -1,0 +1,12 @@
+{
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "javascript.suggest.enabled": true,
+  "typescript.suggest.enabled": true
+}

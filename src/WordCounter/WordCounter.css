@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.word-counter-main-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.word-counter-sub-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 10px 10px 15px;
+}
+
+.word-counter-sub-container-a {
+  background-color: #fcc553;
+  color: #0f172a;
+}
+
+.word-counter-sub-container-b {
+  background-color: #0f172a;
+  color: #fcc553;
+}
+
+.word-counter-a-heading-container {
+  background-color: #ffbf1f;
+  height: 20vh;
+  width: 97%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.no-user-inputs-img {
+  height: 60vh;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.word-counter-input-button-container {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.input-word {
+  background-color: #fff;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: #0f172a;
+  font-size: 19px;
+  width: 78%;
+}
+
+.add-button {
+  color: #0f172a;
+  background-color: #fcc553;
+  padding: 7px 24px 7px 24px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.words-list-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}

@@ -1,0 +1,70 @@
+.music-playlist-main-container {
+  min-height: 100vh;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.music-playlist-first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png");
+  height: 50vh;
+  background-size: cover;
+  width: 100%;
+  padding-left: 3em;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.music-playlist-second-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 70px 20px 70px;
+  background-color: #152850;
+}
+
+.music-playlist-heading-search-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.music-playlist-list-view-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.music-playlist-list-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.music-playlist-delete-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 0px;
+  height: 4vh;
+  width: 30%;
+  cursor: pointer;
+}
+
+.music-playlist-no-songs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  padding-top: 100px;
+}

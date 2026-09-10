@@ -2,8 +2,7 @@ import React from "react";
 import "../index.css";
 
 function LatestMatchCard(props) {
-  console.log(props);
-  const { latestMatchDetails } = props;
+  const { latestMatchDetails = {} } = props;
   const {
     umpires,
     competingTeam,

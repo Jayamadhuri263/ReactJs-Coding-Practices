@@ -12,15 +12,19 @@ function Config() {
           onToggleShowLeftNavbar,
           onToggleShowRightNavbar,
         } = value;
+
         const onToggleChangeContent = (e) => {
           onToggleShowContent(e.target.value);
         };
+
         const onToggleChangeLeft = (e) => {
           onToggleShowLeftNavbar(e.target.value);
         };
+
         const onToggleChangeRight = (e) => {
           onToggleShowRightNavbar(e.target.value);
         };
+        
         return (
           <div>
             <h1>Layout</h1>

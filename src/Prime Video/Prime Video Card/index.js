@@ -26,19 +26,22 @@ function PrimeVideoCard(props) {
           backgroundColor: "transparent",
         }}
       >
-        {(close) => {}}
-        <div className="prime-video-card-mini">
-          <button
-            type="button"
-            className="prime-video-card-button"
-            // onClick={() => close()}
-          >
-            <IoMdClose size={30} />
-          </button>
-        </div>
-        <div>
-          <ReactPlayer url={videoUrl} className="react-player" />
-        </div>
+        {(close) => (
+          <>
+            <div className="prime-video-card-mini">
+              <button
+                type="button"
+                className="prime-video-card-button"
+                onClick={() => close()}
+              >
+                <IoMdClose size={30} />
+              </button>
+            </div>
+            <div>
+              <ReactPlayer url={videoUrl} className="react-player" />
+            </div>
+          </>
+        )}
       </Popup>
     </div>
   );

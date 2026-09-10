@@ -9,7 +9,6 @@ import {
   ResponsiveContainer,
   PieChart,
   Pie,
-  Sector,
   Cell,
 } from "recharts";
 import "./index.css";

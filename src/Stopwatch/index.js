@@ -37,6 +37,11 @@ function Stopwatch() {
     setStart(false);
   };
 
+  const onReset = () => {
+    setTimer(0);
+    setStart(false);
+  };
+
   return (
     <div className="stopwatch-container">
       <h1 className="stopwatch-heading">Stopwatch</h1>
@@ -65,7 +70,7 @@ function Stopwatch() {
           >
             Stop
           </button>
-          <button type="button" className="timer-button reset-timer">
+          <button type="button" className="timer-button reset-timer" onClick={onReset}>
             Reset
           </button>
         </div>

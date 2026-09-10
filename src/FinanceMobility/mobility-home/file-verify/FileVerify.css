@@ -1,0 +1,47 @@
+.finance-mobility-home-main-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    padding: 6em 2em 3em 5em;
+    background-color: rgb(173, 215, 235);
+}
+
+.finance-mobility-self-payment-main-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(3, 72, 112);
+    margin-bottom: 20px;
+}
+
+.finance-mobility-home-main-container div {
+    width: 54%;
+}
+
+.finance-mobility-home-main-container div>div>p {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.finance-mobility-auth-reject-button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+
+.finance-mobility-home-main-container div>button>p:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.finance-mobility-home-main-container form {
+    width: 100%;
+    margin-top: 3em;
+}
+
+.finance-mobility-root button:disabled {
+    cursor: no-drop;
+    pointer-events: all !important;
+}

@@ -1,0 +1,154 @@
+.rock-paper-scissors-container {
+    display: flex;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      max-width: 100%;
+      background-color: bisque;
+      color: gray;
+    }
+    
+    .score-container {
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      height: 13vh;
+      border-radius: 7px;
+      border: 2px solid black;
+      margin-top: 2em;
+      padding: 2em 6em;
+    }
+    
+    .score-container>h1 {
+      color: rgba(0, 0, 0, 0.89);
+      font-size: 18px;
+      font-weight: 700;
+    }
+    
+    .score-container>div {
+      background-color: aliceblue;
+      height: 14vh;
+      width: 30%;
+      border-radius: 8px;
+    }
+    
+    .score-container>div>h1 {
+      color: rgba(0, 0, 0, 0.89);
+      font-size: 18px;
+      font-weight: 700;
+    text-align: center;
+  }
+  
+  .score-container>div>h1>span {
+    font-size: 40px;
+  }
+  
+  .button-container {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 10vh;
+    width: 25%;
+    margin-right: 2em;
+  }
+  .button-container1{
+    height: 26vh !important;
+  }
+  
+  .buttons-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 3em;
+    margin-left: 9em;
+  }
+  
+  .button-container>img {
+    height: 25vh;
+    width: 100%;
+  }
+  
+  .result {
+    margin-top: 1em;
+    margin-left: 5.5em;
+  }
+  
+  .choice-image {
+    height: 25vh;
+    width: 100%;
+  }
+  
+  .result-sub-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .result-sub-container>div {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 2em;
+  }
+  
+  .rules-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: 6em;
+      width: 80%;
+    }
+    
+    .result-sub-container>div>div>p {
+      margin-left: 3.5em;
+    }
+    
+    .text-draw {
+      color: orange;
+    }
+    
+    .text-won {
+      color: green;
+  }
+  
+  .text-lose {
+    color: red;
+  }
+  
+  .play-again-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.6em 1.6em;
+    width: 28%;
+    margin-left: 8.4em;
+    margin-top: 1em;
+  }
+  .popup-content {
+    background-color: rgb(226, 178, 123);
+    height: 66vh;
+    width: 40%;
+    padding: 2em 4em;
+    border-radius: 10px;
+  }
+  .close {
+    display: flex;
+    width: 5%;
+    margin-left: 42em;
+    margin-top: -0.8em;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .rules-image {
+    height: 66vh;
+    width: 100%;
+  }

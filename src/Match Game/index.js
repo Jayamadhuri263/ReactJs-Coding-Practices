@@ -257,7 +257,7 @@ function MatchGame() {
   const [activeTabId, setActiveTabId] = useState(tabsList[0].tabId);
   const [selectedImage, setSelectedImage] = useState(imagesList[0].imageUrl);
   const [selectedImageId, setSelectedImageId] = useState(imagesList[0].id);
-  const [activeImageId, setActiveImageId, counterRef] = useState("");
+  const [, setActiveImageId, counterRef] = useState("");
   const [score, setScore] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [timer, setTimer] = useState(60);

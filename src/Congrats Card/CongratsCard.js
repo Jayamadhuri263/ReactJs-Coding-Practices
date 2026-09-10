@@ -11,9 +11,9 @@ function CongratsCard() {
           alt="congrats-profile"
           className="congrats-profile"
         />
-        <h1 className="congrats-profile-name">Kiran V</h1>
+        <h1 className="congrats-profile-name">Jaya madhuri Ganjikunta</h1>
         <p className="congrats-profile-description">
-          Vishnu Institute of Computer Education and Technology, Bhimavaram
+        Rajiv Gandhi University of Knowledge Technologies, RK Valley - Andhra Pradesh 
         </p>
         <img
           src="https://assets.ccbp.in/frontend/react-js/congrats-card-watch-img.png"

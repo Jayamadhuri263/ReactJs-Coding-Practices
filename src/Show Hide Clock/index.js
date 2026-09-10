@@ -6,6 +6,7 @@ const currentDate = new Date().toLocaleTimeString();
 function ShowHideClockExample() {
   const [time, setTime] = useState(currentDate);
   const [showClock, setShowClock] = useState(true);
+  
   const onClickShowHideClock = () => {
     setShowClock(!showClock);
   };
