@@ -193,12 +193,6 @@
 .loss-status{
     color: rgb(196, 15, 15);
 }
-.not-found-heading{
-    font-size: 50px;
-    color: #000;
-    font-weight: 800;
-}
-
 @media screen and (min-width:768px) {
     .teams-list-container-ipl{
         margin-left: 4%;

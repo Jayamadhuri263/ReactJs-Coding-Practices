@@ -1,0 +1,48 @@
+.finance-mobility-self-payment-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7em 1em 2em 3em;
+    background-color: rgb(207, 239, 245);
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.finance-mobility-self-payment-main-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(3, 72, 112);
+    margin-bottom: 0px;
+}
+
+.finance-mobility-self-payment-main-container form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.finance-mobility-self-payment-sub-heading {
+    color: rgb(12, 108, 197);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.finance-mobility-debit-info-details-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -5px;
+}
+
+.finance-mobility-debit-info-details-main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.finance-mobility-root button:disabled {
+    cursor: no-drop;
+    pointer-events: all !important;
+}

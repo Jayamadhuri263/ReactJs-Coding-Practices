@@ -10,42 +10,64 @@ export default function TeamMatchDetails() {
   console.log(id);
   console.log(`https://apis.ccbp.in/ipl/${id}`);
   const [isLoading, setIsLoading] = useState(true);
-  const [teamsMatchList, setTeamsMatchList] = useState([]);
+  const [teamsMatchList, setTeamsMatchList] = useState(null);
 
   useEffect(() => {
     const getTeamMatchListData = async () => {
-      const response = await fetch(`https://apis.ccbp.in/ipl/${id}`);
-      const teamsMatchData = await response.json();
+      setIsLoading(true);
+      try {
+        const response = await fetch(`https://apis.ccbp.in/ipl/${id}`);
+        const teamsMatchData = await response.json();
 
-      const getFormattedData = (data) => ({
-        umpires: data.umpires,
-        competingTeam: data.competing_team,
-        competingTeamLogo: data.competing_team_logo,
-        date: data.date,
-        firstInnings: data.first_innings,
-        id: data.id,
-        manOfTheMatch: data.man_of_the_match,
-        matchStatus: data.match_status,
-        result: data.result,
-        secondInnings: data.second_innings,
-        venue: data.venue,
-      });
+        const getFormattedData = (data) => {
+          if (!data) {
+            return {
+              umpires: "",
+              competingTeam: "",
+              competingTeamLogo: "",
+              date: "",
+              firstInnings: "",
+              id: "",
+              manOfTheMatch: "",
+              matchStatus: "",
+              result: "",
+              secondInnings: "",
+              venue: "",
+            };
+          }
+          return {
+            umpires: data.umpires,
+            competingTeam: data.competing_team,
+            competingTeamLogo: data.competing_team_logo,
+            date: data.date,
+            firstInnings: data.first_innings,
+            id: data.id,
+            manOfTheMatch: data.man_of_the_match,
+            matchStatus: data.match_status,
+            result: data.result,
+            secondInnings: data.second_innings,
+            venue: data.venue,
+          };
+        };
 
-      const formattedTeamsMatchData = () => ({
-        teamsBannerUrl: teamsMatchData.team_banner_url,
-        latestMatch: getFormattedData(teamsMatchData.latest_match_details),
-        recentMatches: teamsMatchData.recent_matches.map((recentMatch) =>
-          getFormattedData(recentMatch)
-        ),
-      });
-      setTeamsMatchList(formattedTeamsMatchData);
+        const formattedTeamsMatchData = {
+          teamsBannerUrl: teamsMatchData.team_banner_url,
+          latestMatch: getFormattedData(teamsMatchData.latest_match_details),
+          recentMatches: (teamsMatchData.recent_matches || []).map(
+            (recentMatch) => getFormattedData(recentMatch)
+          ),
+        };
+        setTeamsMatchList(formattedTeamsMatchData);
+      } catch (e) {
+        console.error(e);
+        setTeamsMatchList(null);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     getTeamMatchListData();
-    setIsLoading(false);
-  }, [teamsMatchList, id]);
-
-  console.log(teamsMatchList);
+  }, [id]);
 
   const bgClassName = () => {
     switch (id) {
@@ -70,21 +92,25 @@ export default function TeamMatchDetails() {
     }
   };
 
-  const { teamsBannerUrl, latestMatch, recentMatches } = teamsMatchList;
+  const { teamsBannerUrl, latestMatch, recentMatches } = teamsMatchList || {};
 
   return (
     <div className={`team-match-details-container ${bgClassName()}`}>
       {isLoading ? (
         <ColorRing color="#fff" height={60} width={60} />
+      ) : !teamsMatchList ? (
+        <p className="latest-matches-heading">Unable to load team matches.</p>
       ) : (
         <div className="team-matches-container">
           <img src={teamsBannerUrl} alt={id} className="team-banner-image" />
 
           <h1 className="latest-matches-heading">Latest Matches</h1>
-          <LatestMatchCard latestMatchDetails={latestMatch} />
+          {latestMatch && (
+            <LatestMatchCard latestMatchDetails={latestMatch} />
+          )}
 
           <div className="recent-matches-container">
-            {recentMatches.map((eachRecentMatch) => (
+            {recentMatches?.length > 0 && recentMatches.map((eachRecentMatch) => (
               <RecentMatchCard
                 key={eachRecentMatch.id}
                 recentMatchDetails={eachRecentMatch}

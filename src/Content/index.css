@@ -1,67 +1,141 @@
-.content-container{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: "Roboto";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap");
 
+.content-container {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 2rem) 3rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  background: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgba(99, 102, 241, 0.18),
+      transparent 55%
+    ),
+    linear-gradient(165deg, #f8fafc 0%, #e2e8f0 45%, #f1f5f9 100%);
+  color: #0f172a;
 }
-.content-heading{
-    color: #0f172a;
-    font-size: 25px;
-}
-@media screen and (min-width:768px) {
-    .content-heading {
-            font-size: 35px;
-        }
-}
-.content-para{
-    margin-top: -10px;   
-    font-size: 16px !important; 
-}
-.content-list-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 66px;
-    margin-left: 48px;
-}
-.home-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-decoration: none;
-    margin-bottom: -20px ;
-}
-.project-name {
-    font-size: 16px;
-    text-decoration: none;
-    color: midnightblue;
-    margin-bottom: -16px;
-}
-.ul-div-container{
-    display: flex;
-    flex-direction: row;
-}
-@media screen and (min-width:768px) {
-    .content-list-container {
-        margin-right: 200px;
-        margin-left: 150px;
-    }
 
-    .home-content{
-        font-size: 23px;
-    }
+.content-header {
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+}
 
-    .content-para {
-        font-size: 20px !important;
-    }
+.content-heading {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  background: linear-gradient(120deg, #0f172a 0%, #334155 50%, #475569 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
-    .project-name {
-        font-size: 23px;
-        margin-bottom: -20px;
-    }
+.content-para {
+  margin: 0;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: #64748b;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 900px) {
+  .content-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.content-column {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.06),
+    0 12px 24px -4px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  padding: 1.25rem 1rem 1.35rem;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.content-column:hover {
+  box-shadow: 0 8px 12px -2px rgba(15, 23, 42, 0.08),
+    0 20px 40px -8px rgba(15, 23, 42, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.content-column--1 {
+  border-top: 3px solid #6366f1;
+}
+
+.content-column--2 {
+  border-top: 3px solid #0ea5e9;
+}
+
+.content-column--3 {
+  border-top: 3px solid #10b981;
+}
+
+.content-column-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.content-column-item {
+  margin: 0;
+}
+
+.project-link {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  font-size: clamp(0.875rem, 1.6vw, 0.95rem);
+  font-weight: 500;
+  text-decoration: none;
+  color: #1e293b;
+  line-height: 1.4;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.project-link:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.1) 0%,
+    rgba(14, 165, 233, 0.08) 100%
+  );
+  color: #0f172a;
+  border-color: rgba(99, 102, 241, 0.2);
+  transform: translateX(2px);
+}
+
+.project-link:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  margin-bottom: -20px;
 }

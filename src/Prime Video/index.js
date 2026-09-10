@@ -113,7 +113,7 @@ function PrimeVideo() {
   const settings = {
     dots: false,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
   };
   const actionMoviesList = moviesList.filter(
     (each) => each.categoryId === "ACTION"

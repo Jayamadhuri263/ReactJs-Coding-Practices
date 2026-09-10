@@ -35,11 +35,10 @@ button{
     background-color: white !important;
     color: black;
 }
-div>div{
+/* div>div{
     display: flex;
     justify-content: space-between;
-    width: 15%;
-}
+} */
 div >input{
     height: 4vh;
     width: 130%;

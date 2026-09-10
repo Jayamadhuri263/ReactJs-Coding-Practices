@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&display=swap");
+
+.not-found-page {
+  --nf-bg: #07080d;
+  --nf-surface: rgba(18, 22, 32, 0.65);
+  --nf-accent: #3ee8c8;
+  --nf-accent-dim: rgba(62, 232, 200, 0.12);
+  --nf-text: #e8ecf4;
+  --nf-muted: #8b95a8;
+
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  position: relative;
+  overflow: hidden;
+  font-family: "DM Sans", system-ui, sans-serif;
+  color: var(--nf-text);
+  background: var(--nf-bg);
+}
+
+.not-found-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(62, 232, 200, 0.18), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(99, 102, 241, 0.12), transparent 50%),
+    radial-gradient(ellipse 50% 35% at 0% 80%, rgba(236, 72, 153, 0.08), transparent 45%);
+  pointer-events: none;
+}
+
+.not-found-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%);
+  pointer-events: none;
+}
+
+.not-found-orb {
+  position: absolute;
+  width: min(90vw, 520px);
+  height: min(90vw, 520px);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    var(--nf-accent-dim) 0%,
+    transparent 55%
+  );
+  filter: blur(60px);
+  animation: not-found-float 14s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes not-found-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3%, -4%) scale(1.05);
+  }
+}
+
+.not-found-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 36rem;
+  width: 100%;
+  text-align: center;
+}
+
+.not-found-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--nf-accent);
+  border: 1px solid rgba(62, 232, 200, 0.35);
+  border-radius: 999px;
+  background: rgba(62, 232, 200, 0.06);
+  backdrop-filter: blur(8px);
+}
+
+.not-found-code {
+  margin: 0 0 0.5rem;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: clamp(4.5rem, 18vw, 8.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  background: linear-gradient(
+    135deg,
+    #fff 0%,
+    #c5cad6 40%,
+    var(--nf-accent) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 80px rgba(62, 232, 200, 0.15);
+  animation: not-found-code-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.not-found-code span {
+  display: inline-block;
+  animation: not-found-digit 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.not-found-code span:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.not-found-code span:nth-child(2) {
+  animation-delay: 0.12s;
+  color: var(--nf-accent);
+  -webkit-text-fill-color: var(--nf-accent);
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  filter: drop-shadow(0 0 24px rgba(62, 232, 200, 0.45));
+}
+.not-found-code span:nth-child(3) {
+  animation-delay: 0.19s;
+}
+
+@keyframes not-found-code-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes not-found-digit {
+  from {
+    opacity: 0;
+    transform: translateY(40px) rotate(-8deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.not-found-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.25rem, 3.5vw, 1.65rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  color: var(--nf-text);
+  animation: not-found-fade 0.8s ease 0.15s both;
+}
+
+.not-found-desc {
+  margin: 0 auto 1.75rem;
+  max-width: 26rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--nf-muted);
+  animation: not-found-fade 0.8s ease 0.22s both;
+}
+
+.not-found-path {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.65rem;
+  font-family: ui-monospace, "Cascadia Code", "DM Sans", monospace;
+  font-size: 0.8rem;
+  color: rgba(232, 236, 244, 0.55);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  word-break: break-all;
+  max-width: 100%;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  animation: not-found-fade 0.8s ease 0.3s both;
+}
+
+@keyframes not-found-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.not-found-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #07080d;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--nf-accent) 0%, #2dd4bf 100%);
+  border: none;
+  border-radius: 999px;
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.15),
+    0 12px 40px rgba(62, 232, 200, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.not-found-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.12),
+    0 18px 48px rgba(62, 232, 200, 0.35);
+}
+
+.not-found-btn:active {
+  transform: translateY(0);
+}
+
+.not-found-btn-ghost {
+  background: transparent;
+  color: var(--nf-text);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+
+.not-found-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: none;
+}
+
+.not-found-page .not-found-btn svg {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  flex-shrink: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .not-found-orb,
+  .not-found-code,
+  .not-found-code span,
+  .not-found-title,
+  .not-found-desc,
+  .not-found-actions {
+    animation: none;
+  }
+  .not-found-btn:hover {
+    transform: none;
+  }
+}

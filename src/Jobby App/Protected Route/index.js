@@ -7,7 +7,7 @@ const ProtectedRoute = (props) => {
 
   // console.log(jwtToken);
   if (jwtToken === undefined || jwtToken === null) {
-    return <Navigate to="/authenticationLogin" replace />;
+    return <Navigate to="/jobbyApp-login" replace />;
   }
   return <Route {...props} />;
 };

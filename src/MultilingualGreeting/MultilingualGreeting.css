@@ -1,0 +1,49 @@
+.multilingual-greeting-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.multilingual-greeting-main-container h1 {
+  margin-bottom: 20px;
+}
+
+.multilingual-greeting-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 40%;
+  margin-top: 40px;
+}
+
+.multilingual-greeting-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 5.5vh;
+  width: 18%;
+  border: 1px solid brown;
+  color: brown;
+  border-radius: 18px;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.multilingual-greeting-image {
+  height: 50vh;
+  width: 80%;
+  margin-top: 60px;
+}
+
+.multilingual-greeting-button:active,
+.multilingual-greeting-button:visited {
+  background-color: brown;
+  color: #fff;
+}

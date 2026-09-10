@@ -1,0 +1,68 @@
+.tech-era-header-container {
+  height: 12vh;
+  width: 100%;
+  padding: 15px 20px 10px 150px;
+  display: flex;
+  background-color: #f1f5f9;
+}
+
+.tech-era-header-logo {
+  height: 50px;
+  width: 150px;
+}
+
+.tech-era-header-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+.tech-era-main-container {
+  height: 88vh;
+  width: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px 30px 90px;
+}
+
+.text-era-list-container {
+  width: 20%;
+}
+
+.tech-era-failure-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tech-era-failure-button {
+  background-color: #4565a1;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 25px 6px 25px;
+}
+
+.tech-era-course-details-container {
+  padding: 80px 50px 10px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-era-detail-image {
+  height: 55vh;
+  width: 60%;
+  margin-right: 30px;
+}
+
+.tech-era-d-none {
+  display: none !important;
+}

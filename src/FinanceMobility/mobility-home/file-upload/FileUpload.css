@@ -1,0 +1,32 @@
+.finance-mobility-home-main-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    padding: 6em 2em 3em 5em;
+    background-color: rgb(173, 215, 235);
+}
+
+.finance-mobility-self-payment-main-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(3, 72, 112);
+    margin-bottom: 20px;
+}
+
+.finance-mobility-root button:disabled {
+    cursor: no-drop;
+    pointer-events: all !important;
+}
+
+.finance-mobility-main-div {
+    width: 60%;
+    margin-top: 3.5em;
+    display: flex;
+}
+
+.finance-mobility-e-bank-home-header-logo {
+    height: 65px;
+    width: 95px;
+}

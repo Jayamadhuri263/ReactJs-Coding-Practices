@@ -19,7 +19,7 @@ const initialList = [
   {
     id: uuid(),
     title: "Salary",
-    amount: 90000,
+    amount: 100000,
     type: "Income",
   },
 ];
@@ -50,7 +50,7 @@ function MoneyManager() {
     setMoneyManagerList([...moneyManagerList, newTransaction]);
     setTitle("");
     setAmount("");
-    setSelectedValue("");
+    setSelectedValue(transactionTypeOptions[0].optionId);
 
     // console.log(moneyManagerList);
   };
@@ -102,7 +102,7 @@ function MoneyManager() {
   return (
     <div className="money-manager-main-container">
       <div className="money-manager-profile-container">
-        <h1 className="money-manager-profile-name">Hi, Richard</h1>
+        <h1 className="money-manager-profile-name">Hi, Jaya madhuri Ganjikunta</h1>
         <p className="money-manager-profile-message">
           Welcome back to your
           <span className="money-manager-profile-message-special">

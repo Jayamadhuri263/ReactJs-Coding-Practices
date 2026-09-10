@@ -28,7 +28,8 @@ function ContactsApp() {
   let [name, setName] = useState("");
   let [mobileNo, setMobileNo] = useState("");
   const [contactList, setContactList] = useState(initialContactsList);
-  //   const [favContactList, setFavContactList] = useState([]);
+  const [favContactList, setFavContactList] = useState([]);
+  const [showFavoritesSection, setShowFavoritesSection] = useState(false);
 
   const onAddContact = (e) => {
     e.preventDefault();
@@ -54,18 +55,16 @@ function ContactsApp() {
     );
   };
 
-  //   const showOnlyFavorites = () => {
-  //     setFavContactList(
-  //       contactList.map((eachFav) => {
-  //         if (eachFav.isFavorite === true) {
-  //           return [...favContactList, eachFav];
-  //         }
-  //         // console.log("fav list: ", eachFav);
-  //         return favContactList;
-  //       })
-  //     );
-  //     console.log("favContactList: ", favContactList);
-  //   };
+  const toggleFavoritesSection = () => {
+    if (showFavoritesSection) {
+      setShowFavoritesSection(false);
+    } else {
+      setFavContactList(
+        contactList.filter((contact) => contact.isFavorite === true)
+      );
+      setShowFavoritesSection(true);
+    }
+  };
 
   return (
     <div className="contacts-app-container">
@@ -91,13 +90,13 @@ function ContactsApp() {
           Add Contact
         </button>
       </form>
-      {/* <button
+      <button
         type="button"
         className="contacts-app-button"
-        onClick={showOnlyFavorites}
+        onClick={toggleFavoritesSection}
       >
-        Show Favorites
-      </button> */}
+        {showFavoritesSection ? "Hide Favorites" : "Show Favorites"}
+      </button>
       <ul className="contacts-app-contacts-table">
         {contactList.map((eachContact) => (
           <ContactItem
@@ -107,16 +106,20 @@ function ContactsApp() {
           />
         ))}
       </ul>
-      {/* <h1>Favorites </h1> */}
-      {/* <ul className="contacts-app-contacts-table">
-        {favContactList.map((eachContact) => (
-          <ContactItem
-            key={eachContact.id}
-            contactDetails={eachContact}
-            toggleIsFavorite={toggleIsFavorite}
-          />
-        ))}
-      </ul> */}
+      {showFavoritesSection && (
+        <>
+          <h1>Favorites </h1>
+          <ul className="contacts-app-contacts-table">
+            {favContactList.map((eachContact) => (
+              <ContactItem
+                key={eachContact.id}
+                contactDetails={eachContact}
+                toggleIsFavorite={toggleIsFavorite}
+              />
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   );
 }

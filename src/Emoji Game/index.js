@@ -77,9 +77,8 @@ const emojisList = [
 ];
 
 function EmojiGame() {
-  const [bestScore, setBestScore] = useState(0);
+  const [bestScore] = useState(0);
   const [selectedEmojis, setSelectedEmojis] = useState([]);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   function shuffleArray(array) {
     let i = array.length - 1;

@@ -20,7 +20,7 @@ function PasswordManager() {
   const [password, setPassword] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [checkboxValue, setCheckboxValue] = useState(false);
-  const [passwordList, setPasswordList] = useState([]);
+  const [passwordList, setPasswordList] = useState(initialPasswordList);
 
   const onAddPassword = (e) => {
     e.preventDefault();
@@ -39,11 +39,11 @@ function PasswordManager() {
   };
 
   const searchPasswordList = passwordList.filter((searchPassword) =>
-    searchPassword.website.toLowerCase().includes(searchValue.toLowerCase())
+    searchPassword?.website?.toLowerCase()?.includes(searchValue?.toLowerCase())
   );
 
   const deletePassword = (item) => {
-    setPasswordList(passwordList.filter((password) => password.id !== item));
+    setPasswordList(passwordList?.filter((password) => password.id !== item));
   };
 
   // console.log(checkboxValue);
@@ -154,7 +154,7 @@ function PasswordManager() {
         </div>
 
         <div className="passwords-list-container">
-          {passwordList.length === 0 || searchPasswordList.length === 0 ? (
+          {passwordList.length === 0 ? (
             <div className="no-passwords-list-view-container">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
@@ -162,6 +162,12 @@ function PasswordManager() {
                 className="password-manager-app-manager-image no-passwords-image"
               />
               <p className="password-manager-form-heading">No Passwords</p>
+            </div>
+          ) : searchPasswordList.length === 0 ? (
+            <div className="no-passwords-list-view-container">
+              <p className="password-manager-form-heading">
+                No passwords match your search
+              </p>
             </div>
           ) : (
             <div className="no-passwords-list-view-container">

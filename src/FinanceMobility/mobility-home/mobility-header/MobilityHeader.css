@@ -1,0 +1,85 @@
+.finance-mobility-navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.8em 6em 0.8em 6em;
+    height: 10vh;
+    background-color: rgb(108, 145, 161);
+}
+
+.finance-mobility-navbar-custom .finance-mobility-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 60% !important;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0px;
+    margin-top: -0.5em;
+    margin-left: 5em;
+}
+
+.finance-mobility-navbar-custom .finance-mobility-dropdown-content.finance-mobility-show {
+    display: block;
+}
+
+.finance-mobility-navbar-custom .dropdown-item {
+    padding: 0.5em;
+}
+
+.finance-mobility-navbar-custom .dropdown-item:hover {
+    font-weight: 800;
+    color: rgb(12, 29, 104);
+    background-color: #97a8f5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.finance-mobility-navbar-custom .dropdown-toggle::after {
+    margin-left: 0.3em;
+    font-size: 30px;
+    color: #f1f1f1;
+    margin-top: 0.4em;
+}
+
+.finance-mobility-navbar-custom .nav-link {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 2em;
+    margin-top: 0px;
+}
+
+.finance-mobility-navbar-custom .nav-item:hover {
+    color: rgb(5, 2, 48);
+}
+
+.finance-mobility-navbar-custom button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.finance-mobility-navbar-custom .collapse h2 {
+    color: white;
+    margin-top: 0.4em;
+    margin-right: 1em;
+    font-size: 22px;
+}
+
+.finance-mobility-navbar-custom .collapse h2 span {
+    color: rgb(12, 29, 104);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.finance-mobility-navbar-custom img {
+    height: 46px;
+    width: 46px;
+    margin-left: -0.3em;
+    margin-right: 0;
+    border-radius: 6em;
+    margin-top: -0.3em;
+}

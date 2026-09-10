@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap");
+
+/* Shared Finance Mobility auth screens (login, registration) */
+.finance-mobility-login-page {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  background:
+    radial-gradient(ellipse 120% 80% at 100% 0%, rgba(45, 106, 130, 0.35), transparent 50%),
+    radial-gradient(ellipse 100% 60% at 0% 100%, rgba(13, 110, 122, 0.25), transparent 45%),
+    linear-gradient(165deg, #0c1929 0%, #132f4a 42%, #0a4a52 100%);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.finance-mobility-login-shell {
+  width: 100%;
+  max-width: 28rem;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.finance-mobility-login-shell--wide {
+  max-width: 34rem;
+}
+
+.finance-mobility-login-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 1rem;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.07),
+    0 22px 48px rgba(8, 40, 60, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  overflow-x: hidden;
+  overflow-y: visible;
+  min-width: 0;
+}
+
+.finance-mobility-login-card-header {
+  padding: 1.75rem 1.75rem 1.25rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(12, 55, 80, 0.08);
+  background: linear-gradient(180deg, rgba(230, 245, 248, 0.5) 0%, transparent 100%);
+}
+
+.finance-mobility-login-brand {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #0c3d4a;
+  margin: 0 0 0.35rem;
+  line-height: 1.2;
+}
+
+.finance-mobility-login-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a6b78;
+}
+
+.finance-mobility-login-alert {
+  margin: 0 1.75rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.finance-mobility-login-alert--info {
+  background: rgba(13, 110, 122, 0.1);
+  color: #0a5c66;
+  border: 1px solid rgba(13, 110, 122, 0.22);
+}
+
+.finance-mobility-login-banner {
+  margin: 1rem 1.75rem 0;
+}
+
+.finance-mobility-login-alert--error {
+  background: rgba(180, 40, 50, 0.08);
+  color: #9b1c29;
+  border: 1px solid rgba(180, 40, 50, 0.2);
+}
+
+.finance-mobility-login-form {
+  padding: 1.5rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  overflow-x: hidden;
+  min-width: 0;
+}
+
+.finance-mobility-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.finance-mobility-login-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #2d4a55;
+}
+
+.finance-mobility-login-input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.85rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid rgba(12, 55, 80, 0.2);
+  border-radius: 0.5rem;
+  background: #fafcfd;
+  color: #0c1929;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  display: block;
+  position: static;
+  min-height: 2.75rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.finance-mobility-login-page .finance-mobility-login-input:-webkit-autofill,
+.finance-mobility-login-page .finance-mobility-login-input:-webkit-autofill:hover,
+.finance-mobility-login-page .finance-mobility-login-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #0c1929;
+  box-shadow: 0 0 0 1000px #fafcfd inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+select.finance-mobility-login-input {
+  cursor: pointer;
+}
+
+.finance-mobility-login-input::placeholder {
+  color: #8aa3ad;
+}
+
+.finance-mobility-login-input:hover {
+  border-color: rgba(13, 110, 122, 0.45);
+}
+
+.finance-mobility-login-input:focus {
+  outline: none;
+  border-color: #0d6e7a;
+  box-shadow: 0 0 0 3px rgba(13, 110, 122, 0.2);
+  background: #fff;
+}
+
+.finance-mobility-login-input--invalid {
+  border-color: #c53030;
+}
+
+.finance-mobility-login-input--invalid:focus {
+  box-shadow: 0 0 0 3px rgba(197, 48, 48, 0.2);
+}
+
+.finance-mobility-login-hint {
+  font-size: 0.75rem;
+  color: #b91c1c;
+  margin: 0;
+}
+
+.finance-mobility-login-submit {
+  margin-top: 0.25rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: linear-gradient(180deg, #118a9a 0%, #0d6e7a 100%);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(8, 60, 70, 0.25);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+.finance-mobility-login-submit:hover:not(:disabled) {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(8, 60, 70, 0.35);
+}
+
+.finance-mobility-login-submit:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.finance-mobility-login-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.finance-mobility-login-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  padding-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #5a7580;
+}
+
+.finance-mobility-login-footer a {
+  color: #0d6e7a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.finance-mobility-login-footer a:hover {
+  text-decoration: underline;
+}
+
+.finance-mobility-login-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(12, 55, 80, 0.1);
+  margin: 0.25rem 0;
+}
+
+.finance-mobility-root .finance-mobility-login-page button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
